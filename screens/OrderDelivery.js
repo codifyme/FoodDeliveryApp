@@ -1,11 +1,11 @@
 import React from "react";
 import {View, Text} from "react-native";
 
-const OrderDelivery = {} => {
+const OrderDelivery = () => {
     return (
-        <view>
+        <View>
             <Text>OrderDelivery</Text>
-        </view>
+        </View>
     )
 }
 export default OrderDelivery;
