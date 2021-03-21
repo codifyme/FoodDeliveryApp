@@ -8,9 +8,12 @@ import {COLORS, icons}from "../constants"
 
 const Tab=createBottomTabNavigator();
 
-const Tabs=()=>{
+const Tabs = () => {
     return(
-        <Tab.Navigator>
+        <Tab.Navigator
+            tabBarOptions={{
+                showLabel:false
+            }}>
             <Tab.Screen
                 name="Home"
                 component={Home}
@@ -18,6 +21,60 @@ const Tabs=()=>{
                     tabBarIcons:({focused})=>(
                         <Image
                             source={icons.cutlery}
+                            resizeMode="contain"
+                            style={{
+                                width:25,
+                                heigth:25,
+                                tintColor:focused ? COLORS.primary:COLORS.secondary
+                            }}
+
+                        />
+                    )
+                }}
+            />
+            <Tab.Screen
+                name="Search"
+                component={Home}
+                options={{ 
+                    tabBarIcons:({focused})=>(
+                        <Image
+                            source={icons.search}
+                            resizeMode="contain"
+                            style={{
+                                width:25,
+                                heigth:25,
+                                tintColor:focused ? COLORS.primary:COLORS.secondary
+                            }}
+
+                        />
+                    )
+                }}
+            />
+            <Tab.Screen
+                name="Like"
+                component={Home}
+                options={{ 
+                    tabBarIcons:({focused})=>(
+                        <Image
+                            source={icons.like}
+                            resizeMode="contain"
+                            style={{
+                                width:25,
+                                heigth:25,
+                                tintColor:focused ? COLORS.primary:COLORS.secondary
+                            }}
+
+                        />
+                    )
+                }}
+            />
+            <Tab.Screen
+                name="User"
+                component={Home}
+                options={{ 
+                    tabBarIcons:({focused})=>(
+                        <Image
+                            source={icons.user}
                             resizeMode="contain"
                             style={{
                                 width:25,
