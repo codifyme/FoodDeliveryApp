@@ -7,12 +7,29 @@ import {Home} from "../screens";
 import {COLORS, icons}from "../constants"
 
 const Tab=createBottomTabNavigator();
+const TabBarCustomButton=({accessibilitiyState , children, onPress})=>{
+    var isSelected=accessibilitiyState.isSelected
+    If(isSelected){
+        return(
+
+        )
+    } else{
+        return(
+            
+        )
+    }
+
+}
 
 const Tabs = () => {
     return(
         <Tab.Navigator
             tabBarOptions={{
-                showLabel:false
+                showLabel:false,
+                style:{
+                    backgroundColor:"transparent",
+                    elevation:0
+                }
             }}>
             <Tab.Screen
                 name="Home"
@@ -46,6 +63,10 @@ const Tabs = () => {
                                 tintColor:focused ? COLORS.primary:COLORS.secondary
                             }}
 
+                        />
+                    ),
+                    tabBarButton:(props)=>(
+                        <TabBarCustomButton{...props}
                         />
                     )
                 }}
