@@ -355,6 +355,7 @@ const Restaurant = ({ route, navigation }) => {
                             paddingHorizontal: SIZES.padding * 3
                         }}
                     >
+                    
                         <View style={{ flexDirection: 'row' }}>
                             <Image
                                 source={icons.pin}
