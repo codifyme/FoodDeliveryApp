@@ -615,5 +615,4 @@ const styles = StyleSheet.create({
         elevation: 1,
     }
 })
-
 export default Home;
