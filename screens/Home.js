@@ -21,7 +21,6 @@ const Home = ({ navigation }) => {
             longitude: 110.36381866919922
         }
     }
-
     const categoryData = [
         {
             id: 1,

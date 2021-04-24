@@ -69,7 +69,6 @@ const TabBarCustomButton = ({ accessibilityState, children, onPress }) => {
         )
     }
 }
-
 const CustomTabBar = (props) => {
     if(isIphoneX()) {
         return (
