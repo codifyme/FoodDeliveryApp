@@ -54,6 +54,9 @@ This is a Food Delivery App that use React Native UI to build a native mobile ap
 * Push the file from your local machine to your github repository ==> git push -u origin master
 * Your github repo is now setup
 
+#Home Page - "Main Menu Categories"
+![terminal main categories](public/assets/images/fdajpg)
+
 
 [![VIDEO DEMO](Coming Soon!)]()
 
