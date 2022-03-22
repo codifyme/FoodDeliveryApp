@@ -55,7 +55,7 @@ This is a Food Delivery App that use React Native UI to build a native mobile ap
 * Your github repo is now setup
 
 #Home Page - "Main Menu Categories"
-![terminal main categories](public/assets/images/fdajpg)
+![terminal main categories](public/assets/images/fda.jpg)
 
 
 [![VIDEO DEMO](Coming Soon!)]()
